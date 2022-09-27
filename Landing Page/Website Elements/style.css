@@ -22,12 +22,63 @@
     overflow: hidden;
 }
 
+.luna {
+    background-color: rgb(20, 111, 231);
+    display: flex;
+    border-radius: 10%;
+    width: 9vw;
+    height: 7.5vh;
+}
+
+
+.modo_oscuro {
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: rgb(30, 30, 124);
+    font-weight: bold;
+    height: 100%;
+    font-size: 1.5 em;
+    color: white;
+}
+
 .navegacion {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
+
+.contenedor_boton {
+    position: relative;
+    background-color: rgb(255, 0, 200);
+    display: none;
+    margin-bottom: 10 em;
+    margin-right: 5 em;
+    max-width: 5vw;
+    height: 5vh;
+    border-radius: 10%;
+}
+
+
+.boton_plegable {
+    position: relative;
+    top: 0.7 em;
+    right: 0.7 rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+
+.boton_plegable .barra {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 .logo {
     color: white;
@@ -85,7 +136,9 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     margin: .5 rem;
+    margin-top: 10px;
 }
+
 
 .col-1 {
     text-align: center;
@@ -94,8 +147,8 @@ nav ul li a {
     position: relative;
     padding-top: 10px;
     padding-left: 40px;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
     border-radius: 6px;
 }
 
@@ -141,6 +194,7 @@ nav ul li a {
 
 
 .colorcito::before {
+    margin-top: 10px;
     content: '';
     width: 75%;
     height: 10px;
@@ -265,8 +319,11 @@ nav ul li a {
 
 
 .col-3 {
+    background-color: #4862b8;
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 20px;
+    padding-right: 30px;
     color: rgb(0, 0, 0);
     flex-basis: 30%;
     position: relative;
@@ -383,6 +440,31 @@ nav ul li a {
 }
 
 
+.row-3 {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+.col-6 {
+    justify-content: flex-start;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    flex-basis: 30%;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+
+
+
+
 .redes {
     background-color: rgb(243, 182, 255);
     text-align: center;
@@ -395,3 +477,23 @@ nav ul li a {
     justify-content: center;
     gap: 5px;
 }
+
+
+
+/* Añadimos Media Queries para hacerlo responsive: */
+
+@media  (max-width: 715px) {
+    .boton_plegable, .contenedor_boton {
+        display: flex;
+        flex-direction: flex-end;
+    }
+
+    .navegacion nav ul li {
+        display: none;
+    }
+
+    .navegacion {
+        margin-top: 10px;
+    }
+}
+
