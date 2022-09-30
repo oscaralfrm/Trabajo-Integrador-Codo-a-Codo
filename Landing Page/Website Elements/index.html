@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/601aa3152d.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,29 +18,28 @@
             <div class="navegacion">
                 <span class="logo">&lt;Java Café/&gt;</span>
                 <nav>
-                    <div class="contenedor_boton">
-                        <a href="" class="boton_plegable">
-                            <span class="barra"></span>
-                            <span class="barra"></span>
-                            <span class="barra"></span>
-                        </a>
+                    <div class="hamburger">
+                        <span class="barra"></span>
+                        <span class="barra"></span>
+                        <span class="barra"></span>
                     </div>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">¿Quiénes somos?</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Nuestros Platillos</a></li>
-                        <li>
-                            <div class="luna">
-                                <button class="modo_oscuro">Cambiar Modo</button>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2vw" heigh="2vh"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M421.6 379.9c-.6641 0-1.35 .0625-2.049 .1953c-11.24 2.143-22.37 3.17-33.32 3.17c-94.81 0-174.1-77.14-174.1-175.5c0-63.19 33.79-121.3 88.73-152.6c8.467-4.812 6.339-17.66-3.279-19.44c-11.2-2.078-29.53-3.746-40.9-3.746C132.3 31.1 32 132.2 32 256c0 123.6 100.1 224 223.8 224c69.04 0 132.1-31.45 173.8-82.93C435.3 389.1 429.1 379.9 421.6 379.9zM255.8 432C158.9 432 80 353 80 256c0-76.32 48.77-141.4 116.7-165.8C175.2 125 163.2 165.6 163.2 207.8c0 99.44 65.13 183.9 154.9 212.8C298.5 428.1 277.4 432 255.8 432z"/></svg>
-                            </div>
-                        </li>
-                    </ul>
+                        <ul class="nav_menu">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Inicio</a></li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">¿Quiénes somos?</a></li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Contacto</a></li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">Nuestros Platillos</a></li>
+                        </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+    <br>
+    <br>
 
     <div class="row">
         <div class="col-1">
@@ -47,47 +48,54 @@
             <p>Nosotros no sólo somos soluciones para tu apetito. Somos el hogar de la creatividad y maestros en darte experiencias culinarias inolvidables a través de nuestros platillos. Déjanos complacer tu paladar y saciar tu sed por un buen café, y te ayudaremos a desarrollar mejores aplicaciones que impactarán tu vida y el mundo entero.</p>
             <h4>Te invitamos a que nos conozcas más.</h4>
             <h4>¡Visita nuestro menú!</h4>
-            <button class="boton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width=".5 vw" height="30px"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"/></svg> </button>
+            <button class="boton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="mug" height="50px" width="50px"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></button>
 
         </div>
-
+        
         <div class="col-2">
-            <img src="/Images/woman-sitting-cafe-drinking-coffee-working-computer.jpg" width="500px" height="300px" alt="Chica tomando café." class="cafechica">
-            <div class="cajacolores-1"></div>
-            <div class="cajacolores-2"></div>
+            <img src="/Images/woman-sitting-cafe-drinking-coffee-working-computer.jpg" width="700px" height="300px" alt="Chica tomando café." class="cafechica">
         </div>
     </div>
 
+    <br>
+
     <div class="colorcito"></div>
+
+    <br>
+    <br>
+    
 
     <h1 class="separador">Lee lo que nuestros clientes <span class="subrayado">opinan</span> sobre nosotros:</h1>
 
     <div class="row-2">
-        <div class="col-3">
-            <h2><i>"Simplemente, <span class="subrayado">me encantó</span>".</i></h2>
-            <h3>Verónica Milstein</h3>
-            <h4>Desarrolladora en MercadoLibre</h4>
-            <img src="/Images/javacafeceo.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
-            <p>"Yo antes trabajaba muchas horas sin parar. Sentí que necesitaba un descanso. Afortunadamente en JavaCafé pude darme unos gustitos, una buena comida, una buena bebida. Me hicieron sentir tan viva. Soy de Palermo, acá de Buenos Aires, y aquí el corazón de la capital el ritmo de trabajo es frenético. Pero siempre un buen tentempié motiva a seguir adelante".</p>
-            <div class="cajacolores-3"></div>
+        <div class="card-1">
+            <div class="col-3">
+                <h2><i>"Simplemente, <span class="subrayado">me encantó</span>".</i></h2>
+                <h3>Verónica Milstein</h3>
+                <h4>Desarrolladora en MercadoLibre</h4>
+                <img src="/Images/javacafeceo.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
+                <p>"Yo antes trabajaba muchas horas sin parar. Sentí que necesitaba un descanso. Afortunadamente en JavaCafé pude darme unos gustitos, una buena comida, una buena bebida. Me hicieron sentir tan viva. Siempre un buen tentempié motiva a seguir adelante".</p>
+            </div>
         </div>
 
-        <div class="col-4">
-            <h2><i>"Justo para <span class="subrayado">emprendedores</span>".</i></h2>
-            <h3>Carolina Jiménez</h3>
-            <h4>Founder & CEO de Startup Nacional</h4>
-            <img src="/Images/desarrolladoracafe.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
-            <p>"Yo siempre tuve sueños en mente: crear mi propia empresa particular dedicada al mundo I.T. y poder impulsar el desarrollo de mi país. Desde que frecuento el café siento que mis ideas pueden llegar a gente de todos los rincones de la Argentina. Estoy fascinada.</p>
-            <div class="cajacolores-4"></div>
+        <div class="card-2">
+            <div class="col-4">
+                <h2><i>"Justo para <span class="subrayado">emprendedores</span>".</i></h2>
+                <h3>Carolina Jiménez</h3>
+                <h4>Founder & CEO de Startup Nacional</h4>
+                <img src="/Images/desarrolladoracafe.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
+                <p>"Yo siempre tuve sueños en mente: crear mi propia empresa particular dedicada al mundo I.T. y poder impulsar el desarrollo de mi país. Desde que frecuento el café siento que mis ideas pueden llegar a gente de todos los rincones de la Argentina. Estoy fascinada.</p>
+            </div>
         </div>
 
-        <div class="col-5">
-            <h2><i>"Vendría aquí <span class="subrayado">todos los días</span>".</i></h2>
-            <h3>Lautaro Trovatto</h3>
-            <h4>Backend Developer de PyME</h4>
-            <img src="/Images/medium-shot-man-drinking-coffee.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
-            <p>"Me gusta salir todas las mañanas a trotar y luego ir a JavaCafé para poder trabajar en mis proyectos personales. El ambiente es realmente muy bueno y la atención es espectacular. Lo recomiendo si querés ir a codear en un sitio tranquilo, con buena vibra".</p>
-            <div class="cajacolores-5"></div>
+        <div class="card-3">
+            <div class="col-5">
+                <h2><i>"Vendría aquí <span class="subrayado">todos los días</span>".</i></h2>
+                <h3>Lautaro Trovatto</h3>
+                <h4>Backend Developer de PyME</h4>
+                <img src="/Images/medium-shot-man-drinking-coffee.jpg" width="300px" height="200px" alt="Cliente feliz." class="cafemujer">
+                <p>"Me gusta salir todas las mañanas a trotar y luego ir a JavaCafé para poder trabajar en mis proyectos personales. El ambiente es realmente muy bueno y la atención es espectacular. Lo recomiendo si querés ir a codear en un sitio tranquilo, con buena vibra".</p>
+            </div>
         </div>
     </div>
 
@@ -97,20 +105,18 @@
 
     <div class="row-3">
 
-        <h1 class="separador">Algunos de nuestros platillos que vas a poder <span class="subrayado">disfrutar: </span></h1>
-
         <div class="col-6">
-            <img src="/Images/cake.jpg" alt="Pastel" width="300px" height="200px">
-            <img src="/Images/cookies.jpg" alt="Galletas" width="300px" height="200px">
-            <img src="/Images/coffeecup.jpg" alt="Café" width="300px" height="200px">
-            <img src="/Images/pie.jpg" alt="Pie" width="300px" height="200px">
+            <h1 class="separador-2">¿Cómo llegar a nuestro <span class="subrayado">café? </span></h1>
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Helvecia 115, B1716NDC Libertad, Provincia de Buenos Aires&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">MCPE Nation</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            <h2 class="separador">✨ Pasteles. Galletitas. Cafés. Dulces. Todo lo que deseas y más. ✨</h1>
         </div>
     </div>
 
 
     <div class="colorcito"></div>
 
-
+    <br>
+    <br>
 
     <h1 class="separador">Cada persona, cada programador, <span class="subrayado">es una historia</span>.</h1>
 
@@ -118,6 +124,9 @@
 
     <h1 class="separador"><span class="subrayado logo-3">&lt;Java Café/&gt;</span></h1>
 
+
+    <br>
+    <br>
 
     <footer>
         <div class="redes">

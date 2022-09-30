@@ -2,7 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+.p {
+    font-size: 20px;
+}
+
+
+body.dark {
+	background: #292C35;
+    color: white;
 }
 
 
@@ -22,24 +33,6 @@
     overflow: hidden;
 }
 
-.luna {
-    background-color: rgb(20, 111, 231);
-    display: flex;
-    border-radius: 10%;
-    width: 9vw;
-    height: 7.5vh;
-}
-
-
-.modo_oscuro {
-    border-radius: 10%;
-    cursor: pointer;
-    background-color: rgb(30, 30, 124);
-    font-weight: bold;
-    height: 100%;
-    font-size: 1.5 em;
-    color: white;
-}
 
 .navegacion {
     display: flex;
@@ -48,35 +41,18 @@
     align-items: center;
 }
 
-.contenedor_boton {
+
+.hamburger {
     position: relative;
+    cursor: pointer;
     background-color: rgb(255, 0, 200);
     display: none;
     margin-bottom: 10 em;
     margin-right: 5 em;
-    max-width: 5vw;
+    width: 10vw;
+    padding: 4px;
     height: 5vh;
     border-radius: 10%;
-}
-
-
-.boton_plegable {
-    position: relative;
-    top: 0.7 em;
-    right: 0.7 rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 31px;
-    height: 21px;
-}
-
-
-.boton_plegable .barra {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
 }
 
 
@@ -129,16 +105,37 @@ nav ul li a {
 .navegacion nav ul li a:hover {
     border-radius: 7.5%;
     background-color: hotpink;
+    height: 200px;
 }
 
 .row {
+    background-color: rgba(238, 255, 0, 0.175);
+    border-radius: 10%;
+    width: vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: .5 rem;
+    margin: .5 0 0 .5 rem;
     margin-top: 10px;
 }
 
+.card-1 {
+    background-color: rgba(255, 0, 191, 0.175);
+    border-radius: 5%;
+    margin: 20px;
+}
+
+.card-2 {
+    background-color: rgba(6, 176, 255, 0.175);
+    border-radius: 5%;
+    margin: 20px;
+}
+
+.card-3 {
+    background-color: rgba(17, 0, 255, 0.175);
+    border-radius: 5%;
+    margin: 20px;
+}
 
 .col-1 {
     text-align: center;
@@ -165,8 +162,8 @@ nav ul li a {
 }
 
 .col-1 p {
-    font-family: monospace;
-    font-size: 16px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: 100;
     text-align: center;
@@ -179,6 +176,7 @@ nav ul li a {
 
 .boton {
     width: 250px;
+    cursor: pointer;
     padding: 12px 12px;
     outline: none;
     border: 0;
@@ -211,6 +209,7 @@ nav ul li a {
     height: 80%;
     background: linear-gradient(to right, plum, pink);
     position: absolute;
+    transform: translateX(580px) translateY(30px);
     left: 10px;
 }
 
@@ -223,7 +222,7 @@ nav ul li a {
 
 .col-2 .cafechica {
     width: 60%;
-    transform: translateX(100px) translateY(-20px);
+    transform: translateX(130px) translateY(-40px);
     border-radius: 20px;
 }
 
@@ -237,7 +236,7 @@ nav ul li a {
     height: 80%;
     width: 60%;
     z-index: -1;
-    transform: translateX(-120px) translateY(-100px); 
+    transform: translateX(-70px) translateY(-100px); 
 }
 
 
@@ -250,7 +249,7 @@ nav ul li a {
     height: 60%;
     width: 50%;
     z-index: -1;
-    transform: translateX(-300px) translateY(130px); 
+    transform: translateX(-280px) translateY(130px); 
 }
 
 
@@ -292,10 +291,21 @@ nav ul li a {
     transform: translateX(-20px) translateY(260px); 
 }
 
+.espacio {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 
 .separador {
     margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.separador-2 {
+    margin-top: 25px;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -319,8 +329,6 @@ nav ul li a {
 
 
 .col-3 {
-    background-color: #4862b8;
-    justify-content: flex-start;
     text-align: center;
     padding-bottom: 20px;
     padding-right: 30px;
@@ -346,9 +354,9 @@ nav ul li a {
 }
 
 .col-3 p {
-    font-family: monospace;
+    font-family: 'Reem Kufi', sans-serif;
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: 100;
     text-align: center;
@@ -363,13 +371,14 @@ nav ul li a {
 .col-4 {
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 20px;
+    padding-right: 30px;
     color: rgb(0, 0, 0);
     flex-basis: 30%;
     position: relative;
     padding-top: 10px;
     padding-left: 30px;
     margin-top: 20px;
-
     border-radius: 6px;
 }
 
@@ -386,9 +395,9 @@ nav ul li a {
 }
 
 .col-4 p {
-    font-family: monospace;
+    font-family: 'Reem Kufi', sans-serif;
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: 100;
     text-align: center;
@@ -402,13 +411,14 @@ nav ul li a {
 .col-5 {
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 20px;
+    padding-right: 30px;
     color: rgb(0, 0, 0);
     flex-basis: 30%;
     position: relative;
     padding-top: 10px;
     padding-left: 30px;
     margin-top: 20px;
-    margin-right: 30px;
     border-radius: 6px;
 }
 
@@ -426,9 +436,9 @@ nav ul li a {
 
 .col-5 p {
     margin-top: 10px;
-    font-family: monospace;
+    font-family: 'Reem Kufi', sans-serif;
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: 100;
     text-align: center;
@@ -441,25 +451,33 @@ nav ul li a {
 
 
 .row-3 {
-    margin-top: 3em;
+    background-color: rgba(255, 238, 4, 0.175);
+    margin-top: 5em;
+    width: 97vw;
+    margin-left: 0.75em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    border-radius: 5%;
 }
 
-
 .col-6 {
-    justify-content: flex-start;
     text-align: center;
     color: rgb(0, 0, 0);
     flex-basis: 30%;
     position: relative;
-    padding-top: 10px;
+    padding-top: 2px;
     padding-left: 30px;
     margin-top: 20px;
     margin-right: 30px;
     border-radius: 6px;
+}
+
+.col-6 img {
+    justify-items: flex-start;
+    border-radius: 10%;
+    padding: 10px;
 }
 
 
@@ -481,19 +499,219 @@ nav ul li a {
 
 
 /* Añadimos Media Queries para hacerlo responsive: */
+/* Por defecto será PC */
 
-@media  (max-width: 715px) {
-    .boton_plegable, .contenedor_boton {
-        display: flex;
-        flex-direction: flex-end;
-    }
 
-    .navegacion nav ul li {
-        display: none;
+
+/* Tablet 850px de ancho, 600px de alto */
+@media only screen and (max-width: 850px) and (max-height: 600px) {
+    
+    .logo {
+        padding-top: 2px;
     }
 
     .navegacion {
-        margin-top: 10px;
+        padding-top: 7px;
+        display: flex;
+        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .cafechica {
+        display: none;
+    }
+
+
+    .col-2 {
+        display: none;
+    }
+
+    .col-1::before {
+        display: none;
+    }
+
+    .colorcito::before {
+        transform: translateX(110px) translateY(30px);
+    }
+
+
+    .navegacion nav ul li a:hover {
+        border-radius: 7.5%;
+        background-color: hotpink;
+        height: 200px;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-left: 40px;
+    }
+
+    .col-1 p {
+        font-size: 24px;
+    }
+
+    .row-2 {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+
 }
 
+
+/* Celular 400px de ancho, 600px de alto */
+@media  only screen and (max-width: 400px) and (max-height: 600px) {
+    .cajacolores-1, .cajacolores-2, .cajacolores-3, .cajacolores-4, .cajacolores-5 {
+        display: none;
+    }
+
+    .contenedor  {
+        position: fixed;
+        z-index: 99;
+    }
+
+
+    .navegacion {
+        padding-top: 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 10px;
+        position: absolute;
+        z-index: 99;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+
+    .hamburger .barra {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-left: 17px;
+    }
+
+
+    .colorcito {
+        position: relative;
+        transform: translateX(-70px) translateY(0px);
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        position: relative;
+        transform: translateX(140px) translateY(2px);
+        width: 12vw;
+        padding: 7px;
+        height: 5vh;
+    }
+
+    .nav_menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(255, 52, 211);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        transition: 0.3s;
+        border-bottom-right-radius: 10%;
+    }
+
+
+    .nav_item {
+        margin: 16px 0;
+    }
+
+
+    .nav_menu.active {
+        left: 0;
+    }
+
+
+    .row {
+        margin-top: 10px;
+    }
+
+    .col-1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        flex-basis: 40%;
+        position: relative;
+        padding-top: 10px;
+        padding-left: 40px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 6px;
+    }
+
+
+    .col-1::before {
+        display: none;
+    }
+
+    .cafechica {
+        display: none;
+    }
+
+    .card-1 {
+        background-color: rgba(255, 0, 191, 0.175);
+        border-radius: 5%;
+        margin: 20px;
+    }
+    
+    .card-2 {
+        background-color: rgba(6, 176, 255, 0.175);
+        border-radius: 5%;
+        margin: 20px;
+    }
+    
+    .card-3 {
+        background-color: rgba(17, 0, 255, 0.175);
+        border-radius: 5%;
+        margin: 20px;
+    }
+
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row-3 {
+        margin-left: 3vw;
+        max-width: 90vw;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .col-6 {
+        text-align: center;
+    }
+}
