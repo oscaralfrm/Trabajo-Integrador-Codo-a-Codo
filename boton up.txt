@@ -1,0 +1,51 @@
+Botton ir arriba
+
+html:
+
+<button class="ir-arriba">
+    <img src="Fotos/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg">
+</button>
+
+css: 
+(arriba despues de *)
+
+html{
+    scroll-behavior: smooth;
+}
+
+(esto va antes del footer)
+.ir-arriba{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #ac7fd2;
+    border: none;
+    cursor: pointer;
+    transition: all 300ns ease;
+    padding: 5px;
+}
+
+.ir-arriba:hover{
+   transform: scale(1.2);
+}
+
+javascript:
+
+const irArriba = document.querySelector(".ir-arriba");
+
+irArriba.addEventListener('click',() =>{
+  document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll",() => {
+  if(window.scrollY < 500){
+    irArriba.style.right = -100 + "px";
+  } else
+  {
+    irArriba.style.right = 5 + "px";
+  }
+}
+
+)
