@@ -270,7 +270,7 @@ header .textos-header{
 }
 
 
-.main .formulario{
+.main {
     margin: auto;
     width: 90%;
     max-width: 900px; /* para que no se estire mucho */
@@ -311,6 +311,71 @@ header .textos-header{
     margin: center;
     width: 80%;
     max-width: 60vw;
+}
+
+.main__img:hover{
+    transform: scale(1.1);
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.form__input {
+    width: 100%;
+    *max-width: 300px;
+    padding: 1em;
+    margin: 1em 0;
+    *border: none;
+    border-radius: 1em;
+    background-color: #ffe4fa;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    box-shadow: 0 0 1em rgba(255, 16, 219, 0.2);
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+input + label {
+    display: block;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 1em;
+    margin: 1em 0;
+    border: none;
+    border-radius: 1em;
+    background-color: #89ffdf;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+    text-align: center;
 }
 
 .main__contact{
